@@ -47,7 +47,7 @@ catchup=False) as dag:
         task_id = 'creating_table',
         sqlite_conn_id='sqlite_default',
         sql="""
-            CREATE TABLE users (
+            CREATE TABLE IF NOT EXISTS users (
                 first_name TEXT NOT NULL,
                 last_name TEXT NOT NULL,
                 country TEXT NOT NULL, 
