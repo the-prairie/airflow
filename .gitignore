@@ -141,3 +141,4 @@ cython_debug/
 # Airflow
 airflow/logs/
 logs/
+.log
